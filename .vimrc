@@ -1,6 +1,10 @@
 set nocompatible
 filetype off
 
+""" Depends on Vundle
+" Run this to set up: 
+"  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin('~/.vim/bundle/Vundle.vim')
 
