@@ -12,6 +12,9 @@ Plugin 'https://github.com/kien/ctrlp.vim.git'
 " Nerd Commenter 
 Plugin 'https://github.com/scrooloose/nerdcommenter.git'
 
+" Go support
+Plugin 'fatih/vim-go'
+
 call vundle#end()
 
 syntax on
