@@ -49,6 +49,8 @@ filetype plugin indent on
 colorscheme holokai
  
 " plugin settings
+" hack for vim airline to always show
+set laststatus=2
 
 " auto load NERD tree if no files are open
 autocmd StdinReadPre * let s:std_in=1
