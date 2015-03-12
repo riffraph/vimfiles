@@ -25,6 +25,9 @@ Plugin 'fatih/vim-go'
 " Status bar mod
 Plugin 'bling/vim-airline'
 
+" PlantUML syntax
+Plugin 'aklt/plantuml-syntax'
+
 " Tagbar parses and summarises code layout
 Plugin 'majutsushi/tagbar'
 
@@ -67,3 +70,4 @@ nmap <F8> :NERDTreeToggle<CR>
 let hlstate=0
 nnoremap <F5> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<CR><CR>
 
+set backspace=indent,eol,start

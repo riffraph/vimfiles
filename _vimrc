@@ -4,6 +4,8 @@ filetype off
 """ Depends on Vundle
 " Run this to set up: 
 "  git clone https://github.com/gmarik/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim
+" Use BundleInstall to install
+" Use BundleClean to remove the packages
 
 set rtp+=~/vimfiles/bundle/Vundle.vim
 call vundle#begin('~/vimfiles/bundle/Vundle.vim')
@@ -22,8 +24,14 @@ Plugin 'scrooloose/nerdtree'
 " Go support
 Plugin 'fatih/vim-go'
 
+" Objective C support
+Plugin 'msanders/cocoa.vim'
+
 " Status bar mod
 Plugin 'bling/vim-airline'
+
+" PlantUML syntax
+Plugin 'aklt/plantuml-syntax'
 
 " Tagbar parses and summarises code layout
 Plugin 'majutsushi/tagbar'
@@ -65,5 +73,7 @@ nmap <F8> :NERDTreeToggle<CR>
 
 " toggle search highlight
 let hlstate=0
-nnoremap <F5> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<CR><CR>
+nnoremap <F5> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<CR>
 
+set guifont=Fixedsys:h11:cANSI
+set backspace=indent,eol,start
