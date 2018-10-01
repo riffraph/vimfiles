@@ -1,12 +1,6 @@
 export PATH=$PATH:~/bin
 
-##
-# Your previous /Users/raphaelc/.bash_profile file was backed up as /Users/raphaelc/.bash_profile.macports-saved_2011-10-29_at_12:54:10
-##
-
-# MacPorts Installer addition on 2011-10-29_at_12:54:10: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
 
 # colors
 export CLICOLOR=1
@@ -26,4 +20,13 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Setting PATH for Python 3.4
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+
+source /usr/local/lib/dnx/bin/dnvm.sh
+
+alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH

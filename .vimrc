@@ -48,6 +48,7 @@ set hlsearch
 set ruler
 filetype plugin on
 filetype plugin indent on
+"set autochdir
 
 colorscheme holokai
  
@@ -69,5 +70,10 @@ nmap <F8> :NERDTreeToggle<CR>
 " toggle search highlight
 let hlstate=0
 nnoremap <F5> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<CR><CR>
+
+
+" GO path for vim-go
+let $GOPATH='/usr/local/bin/go'
+
 
 set backspace=indent,eol,start
